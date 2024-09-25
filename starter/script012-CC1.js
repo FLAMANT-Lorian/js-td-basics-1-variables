@@ -16,3 +16,19 @@
 //    Mark est plus élevé que celui de John ? true").
 //
 // BONNE CHANCE 😀
+
+// Mark
+
+let markWeight = 60;
+let markHeight = 1.7;
+let markBMI = markWeight / markHeight**2;
+
+// Jhon
+
+let jhonWeight = 85;
+let jhonHeight = 1.95;
+let jhonBMI = jhonWeight / jhonHeight**2;
+
+let compBMI = jhonBMI >= markBMI;
+
+console.log(`Est-ce que le BMI de Mark et plus élevé que celui de Jhon ? ${compBMI}. Jhon à précisement un BMI de ${markBMI} et Jhon de ${jhonBMI}.`);

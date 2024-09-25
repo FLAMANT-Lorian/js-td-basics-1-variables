@@ -4,7 +4,7 @@ Affichez dans la console le résultat de l'opérateur "+" dans les différentes 
 avec les valeurs 4 et 5 selon qu'elles sont de type nombre ou de type chaîne :
 - 4 et 5 sont toutes deux de type nombres :
 */
-const a = 4 + 5;
+let a = 4 + 5;
 console.log(a);
 /*
     * quelle opération réalise l'opérateur "+" dans ce cas ?
@@ -13,8 +13,8 @@ console.log(a);
     --> Le résultat de l'addition est de 9
 - 4 et 5 sont toutes deux de type chaîne :
 */
-const b = '4' + '5';
-console.log(b);
+a = '4' + '5';
+console.log(a);
 /*
     * quelle opération réalise l'opérateur "+" dans ce cas ?
     --> Il va noter les 2 caractères un à la suite de l'autre
@@ -22,17 +22,17 @@ console.log(b);
     --> Dans la console, il est noté 45
 - 4 est de type chaîne et 5 est de type nombre :
 */
-const c = '4' + 5;
-console.log(c);
+a = '4' + 5;
+console.log(a);
 /*
     * quelle opération réalise l'opérateur "+" dans ce cas ?
     --> Toujours aucune
     * quel est le résultat de l'opération ?
-    --> La console affiche quatre5
+    --> Dans la console, il est noté 45
 - que se passe-t-il si on entoure toute l'expression (VALEUR OPÉRANDE VALEUR) de guillemets ? Pourquoi ?
 */
-const d = "'4' + 5";
-console.log(d);
+a = "'4' + 5";
+console.log(a);
 /*
 */
 

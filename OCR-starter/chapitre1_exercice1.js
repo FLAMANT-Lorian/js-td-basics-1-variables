@@ -7,4 +7,4 @@ Affichez dans la console :
 // Votre prénom (chaîne)
 console.log('Lorian');
 // Votre âge (nombre)
-console.log('Flamant');
+console.log('28');

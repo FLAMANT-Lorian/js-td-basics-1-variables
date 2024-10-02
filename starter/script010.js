@@ -15,14 +15,24 @@ let yearMark;
 yearJhon = now - ageJhon;
 yearMark = now - ageMark;
 console.log(yearJhon);
-console.log(`Mark est né en ${yearMark}`);
+console.log(`"Mark est né en ${yearMark}"`);
 
 // 3. Affichez l'année à laquelle nous serons dans deux ans, le double de l'année et le dixième de l'année.
 console.log(now + 2);
 console.log(now * 2);
-console.log(now / 10 + now);
+console.log(now * 0.1);
+
+
+
 // Opérateurs logiques
+
+
 
 // 4. … (Veuillez préciser votre question ou vos actions ici)
 
+
+
+
+
 // Opérateur typeof
+

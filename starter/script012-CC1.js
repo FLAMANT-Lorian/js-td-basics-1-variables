@@ -19,16 +19,88 @@
 
 // Mark
 
-let markWeight = 60;
-let markHeight = 1.7;
-let markBMI = markWeight / markHeight**2;
+const markWeight = 50; // C'est une instruction, mais aussi une déclaration de constante et initialisation de constante
+const markHeight = 1.75;
+const markBMI = markWeight / Math.pow(markHeight, y=2);
+// OU const markBMI = markWeight / markHeight * markHeight; markWeight / markHeight * markHeightest une expression numérique
 
 // Jhon
 
-let jhonWeight = 85;
-let jhonHeight = 1.95;
-let jhonBMI = jhonWeight / jhonHeight**2;
+const jhonWeight = 103;
+const jhonHeight = 1.8;
+const jhonBMI = jhonWeight / Math.pow(jhonHeight, y=2);
+// OU const jhonBMI = jhonWeight / jhonHeight * jhonHeight;
 
-let compBMI = jhonBMI >= markBMI;
+const isMarkBiggerThanJhon = markBMI > jhonBMI; //markBMI > jhonBMI est une expression booléenne/ de comparaison
 
-console.log(`Est-ce que le BMI de Mark et plus élevé que celui de Jhon ? ${compBMI}. Jhon à précisement un BMI de ${markBMI} et Jhon de ${jhonBMI}.`);
+console.log(`Est-ce que le BMI de Mark et plus élevé que celui de Jhon ? ${isMarkBiggerThanJhon}. Jhon à précisement un BMI de ${jhonBMI} et Mark de ${markBMI}.`);
+
+/*
+// l'ensemble est une structure de contrôle
+if (markBMI > jhonBMI){ // dans les parenthèses, c'est la condition
+    console.log(`Mark a un BMI plus élevé que celui Jhon`);
+    console.log(`Mark (BMI) : ` +  Math.trunc(markBMI)); // le "trunc" permet de gérer le nombre après la virgule
+    console.log(`Mark (BMI) : ` +  Math.ceil(markBMI)); // le "trunc" permet d'arrondir vers le haut
+    console.log(`Mark (BMI) : ` +  Math.floor(markBMI)); // le "trunc" permet d'arrondir vers le bas
+
+} else {
+    if (jhonWeight > 100){
+        console.log('Aie ...');
+    } else {
+        console.log(`Jhon a un BMI plus élevé que celui Mark`);
+    }
+}
+
+ */
+
+// Le sucre syntaxique (On met le else if au lieu d'imbriquer)
+if (markBMI > jhonBMI){ // (markBMI > jhonBMI) c'est la condition mais sans les parenthèses, c'est une expression booléenne
+    console.log(`Mark a un BMI plus élevé que celui Jhon`); // `Mark a un BMI plus élevé que celui Jhon` est une expression
+    if (markBMI < 18){
+        console.log(`Mark (BMI < 18) : ` + Math.trunc(markBMI));
+    } else if (markBMI < 25){
+        console.log(`Mark (BMI < 25) : ` + Math.trunc(markBMI));
+    } else if (markBMI < 35){
+        console.log(`Mark (BMI < 35) : ` + Math.trunc(markBMI));
+    } else {
+        console.log(`Mark (BMI > 35) : ` + Math.trunc(markBMI));
+    }
+} else {
+    console.log(`Jhon a un BMI plus élevé que celui Mark`);
+    if (jhonBMI < 18) {
+        console.log(`Jhon (BMI < 18) : ` + Math.trunc(jhonBMI));
+    } else if (jhonBMI < 25) {
+        console.log(`Jhon (BMI < 25) : ` + Math.trunc(jhonBMI));
+    } else if (jhonBMI < 35) {
+        console.log(`Jhon (BMI < 35) : ` + Math.trunc(jhonBMI));
+    } else {
+        console.log(`Jhon (BMI > 35) : ` + Math.trunc(jhonBMI));
+    }
+}
+
+/*
+// La même chose mais avec des switchs
+switch (markBMI){
+    case (jhonBMI < 18) :
+        console.log(`Jhon (BMI < 18) : ` + Math.trunc(jhonBMI));
+        break;
+    case(jhonBMI < 25) :
+        console.log(`Jhon (BMI < 25) : ` + Math.trunc(jhonBMI));
+        break;
+    default :
+        console.log(`Jhon (BMI > 35) : ` + Math.trunc(jhonBMI));
+        break;
+}
+*/
+
+/*
+if (markBMI < 18){
+    console.log(`Mark (BMI < 18) : ` + Math.trunc(markBMI));
+} else if (markBMI < 25){
+    console.log(`Mark (BMI < 25) : ` + Math.trunc(markBMI));
+} else if (markBMI < 35){
+    console.log(`Mark (BMI < 35) : ` + Math.trunc(markBMI));
+} else {
+    console.log(`Mark (BMI > 35) : ` + Math.trunc(markBMI));
+}
+*/

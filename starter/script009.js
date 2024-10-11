@@ -30,3 +30,4 @@ alert(`"${firstName} est un ${job} de ${age} ans. Est-il marié ? ${isMarried}"`
 let lastName= prompt(`Quel est son nom de famille ?`);
 console.log(`"Le nom de famille de Jhon est ${lastName}"`);
 
+
